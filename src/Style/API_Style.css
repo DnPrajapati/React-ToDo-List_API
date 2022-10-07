@@ -1,0 +1,33 @@
+.iconOfStatus {
+    width: 30px;
+    height: 30px;
+    margin: 0px 5% 0px 10%;
+}
+.wholeTable {
+    margin: 3% 10%;
+    border-radius: 1%;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.table {
+    margin: 0px !important;
+}
+
+.tableHeader {
+    text-align: center;
+    font-size: 18px;
+    box-sizing: content-box;
+    background-color: #6983d1;
+    border-top: 7px solid #6983d1;
+    border-bottom: 7px solid #6983d1;
+    color: #f3f3f3;
+}
+
+.tableDescription {
+    padding: 0.5rem 0.5rem 0.5rem 2rem !important;
+}
+
+.tableAction {
+    text-align: center;
+}
