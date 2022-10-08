@@ -1,10 +1,10 @@
-#ToDo-List_API App
->By Dhruvil Prajapati
+# ToDo-List_API App
+> By Dhruvil Prajapati
 
 This app get ToDo-List Data from server
 
-##Functionality
+## Functionality
 
--Fetch server data
--Display data of selected user at once
--Change Status from Pending->Done and vice-versa
+- Fetch data from server ( https://jsonplaceholder.typicode.com/todos/ )
+- Display data of selected user
+- Change Status from Pending-->Done and vice-versa
