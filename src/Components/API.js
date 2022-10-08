@@ -1,16 +1,25 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {baseAPI} from "../API/BaseAPI"
+import { baseAPI } from "../API/BaseAPI";
 import APITable from "./API_Table";
 import APINavBar from "./API_NavBar";
 import "../Style/API_Style.css";
 
 export default function API() {
+  
   const [data, setData] = useState([]);
   const [userId, setUserId] = useState(1);
   const [userIdData, setUserIdData] = useState([]);
+
   const updateUserID = (newID) => setUserId(newID);
+
+  const handleToggle = (patchData) => {
+    let afterToggleData = JSON.parse(JSON.stringify(data));
+    afterToggleData[patchData].completed =
+      !afterToggleData[patchData].completed;
+    setData(afterToggleData);
+  };
 
   useEffect(() => {
     axios
@@ -26,15 +35,15 @@ export default function API() {
   }, []);
 
   useEffect(() => {
-    debugger
+    // debugger
     setUserIdData(data.filter((x) => x.userId === userId));
-    debugger
+    // debugger
   }, [data, userId]);
 
   return (
     <>
       <APINavBar updateUserID={updateUserID} />
-      <APITable data={userIdData} />
+      <APITable data={userIdData} fun={handleToggle} />
     </>
   );
 }

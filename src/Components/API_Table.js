@@ -16,7 +16,7 @@ export default function APITable(props) {
           </thead>
           <tbody>
             {props.data.map((x) => (
-              <APITableRow rowData={x} key={x.id} />
+              <APITableRow rowData={x} key={x.id} fun= {props.fun}/>
             ))}
           </tbody>
         </Table>
