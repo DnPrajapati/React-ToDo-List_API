@@ -13,7 +13,7 @@ function APINavBar(props) {
         <Col md={{offset: 4, size: 3}}>
         <InputGroup>
           <InputGroupText>Enter User ID</InputGroupText>
-          <Input type="number" onChange={e => {setInputUserId(e.target.value)}} value={inputUserId}/>
+          <Input type="number" onChange={e => {setInputUserId(e.target.value)}} value={inputUserId} min="1" max="10"/>
           <Button color="success" onClick={onSubmit}>Submit</Button>
         </InputGroup>
         </Col>
