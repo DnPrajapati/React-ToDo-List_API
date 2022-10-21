@@ -1,7 +1,7 @@
 > By Dhruvil Prajapati
 # ToDo-List_API App
 
-This app get ToDo-List Data from server
+This app get ToDo-List data from server
 
 ## Functionality
 
